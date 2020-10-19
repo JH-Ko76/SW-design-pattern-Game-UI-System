@@ -7,8 +7,6 @@ public class Decorator_Range extends Decorator_Upgrade {
     	this.Upgrade = upgrade;
     }
     public String getUpgrade() {
-    	return "ªÁ∞≈∏Æ ¡ı∞° " + Upgrade.getUpgrade();
-    	
+    	return "ÏÇ¨Í±∞Î¶¨ Ï¶ùÍ∞Ä " + Upgrade.getUpgrade();	
     }
-	
 }
