@@ -2,8 +2,8 @@ package Sw_project;
 
 public class State_skill implements State_control {
 
-	//½ºÅ³»óÅÂ
+	//ìŠ¤í‚¬ìƒíƒœ
 	public void Unit_control() {
-    System.out.println("½ºÅ³ »ç¿ë");
+    System.out.println("ìŠ¤í‚¬ ì‚¬ìš©");
 	}
 }
