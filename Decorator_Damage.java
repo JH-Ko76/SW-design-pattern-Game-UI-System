@@ -7,8 +7,6 @@ public class Decorator_Damage extends Decorator_Upgrade {
     	this.Upgrade = upgrade;
     }
     public String getUpgrade() {
-    	return "°ø°İ·Â Áõ°¡" + Upgrade.getUpgrade();
-    	
+    	return "ê³µê²©ë ¥ ì¦ê°€" + Upgrade.getUpgrade();	
     }
-	
 }
