@@ -7,8 +7,6 @@ public class Decorator_Armor extends Decorator_Upgrade {
     	this.Upgrade = upgrade;
     }
     public String getUpgrade() {
-    	return "¹æ¾î·Â Áõ°¡" + Upgrade.getUpgrade();
-    	
+    	return "ë°©ì–´ë ¥ ì¦ê°€" + Upgrade.getUpgrade();	
     }
-	
 }
