@@ -4,6 +4,7 @@ it is a program that implements simple game interface that applies design patter
 Implemented through Java Swing.
 This project was used Prototype , Decorator, State ,Bridge Pattern
 Image of unit and structure Self-find
+
 디자인패턴을 적용한 간단한 게임인터페이스를 구현한 프로그램입니다.
 
 Java Swing을 통해 구현하였습니다.
