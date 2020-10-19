@@ -23,16 +23,8 @@ public class Main_Starcraft  {
 
 	
 	public static void main(String[] args) throws CloneNotSupportedException {
-    	
 		Frame f = new Frame();	
-		
-    // TODO Auto-generated method stub
-
-    
-    
-    
-
-
+		//í”„ë ˆì„ ìƒì„±
      	}
 	}
 
@@ -44,22 +36,19 @@ class Frame extends JFrame {
 	JPanel panel, panel2 , panel3 ,panel1;
 	JLabel en,vec;
 	JPanel eng,vect ;
-
 	JPanel marin, firebat, ghost, medic;
 	JLabel marin1, firebat1 , ghost1 ,medic1; 
-
 	ImageIcon Barracks , Engineering , Vector, marineim ,firebatim ,ghostim ,medicim ;
 	TextArea text;
 	
 
 public Frame() {
-	
-	setTitle("À¯´ÖÀÎÅÍÆäÀÌ½º ÇÁ·Î±×·¥");
+	setTitle("ìœ ë‹›ì¸í„°í˜ì´ìŠ¤ í”„ë¡œê·¸ë¨");
 	setLayout(null);
 	
 
-	//¹è·° ÀÌ¹ÌÁö
-	Barracks = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\Barrack.png");
+	//ë°°ëŸ­ ì´ë¯¸ì§€
+	Barracks = new ImageIcon("C:\\Game\\Barrack.png");
 	panel = new JPanel();
 	panel.setLocation(10, 10);
 	panel.setBackground(Color.WHITE);
@@ -89,7 +78,7 @@ public Frame() {
 	eng.setSize(100,100);
 	eng.setLocation(130,10);
 	add(eng);
-	Engineering  = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\Vector.Png");
+	Engineering  = new ImageIcon("C:\\Game\\Vector.Png");
 	Image im3= Engineering.getImage(); 
 	Image im2 = im3.getScaledInstance(100, 100, Image.SCALE_DEFAULT);
 	ImageIcon icon2 = new ImageIcon(im2);
@@ -106,7 +95,7 @@ public Frame() {
 	vect.setSize(100,100);
 	vect.setLocation(250,10);
 	add(vect);
-	Vector  = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\Engineering.png");
+	Vector  = new ImageIcon("C:\\Game\\Engineering.png");
 	Image im4= Vector.getImage(); 
 	Image im5 = im4.getScaledInstance(100, 100, Image.SCALE_DEFAULT);
 	ImageIcon icon3 = new ImageIcon(im5);
@@ -114,19 +103,19 @@ public Frame() {
 	vect.add(vec);
 	
 
-    //¾È³»
+    //ì•ˆë‚´
 
 
-	label5 = new JLabel("À¯´Ö Á¤º¸");
+	label5 = new JLabel("ìœ ë‹› ì •ë³´");
 	label5.setSize(100,30);
 	panel1.add(label5);
 	
-	label2 = new JLabel("Á¶ÀÛ ¹öÆ°");
+	label2 = new JLabel("ì¡°ì‘ ë²„íŠ¼");
 	label2.setSize(100,30);
 	panel2.add(label2);
 	
 	
-	label3 = new JLabel("¾÷±×·¹ÀÌµå");
+	label3 = new JLabel("ì—…ê·¸ë ˆì´ë“œ");
 	label3.setSize(100,30);
 	panel3.add(label3);
 		
@@ -134,13 +123,13 @@ public Frame() {
 	
 	
 	
-	//À¯´Ö¹öÆ° ÇÁ·ÎÅäÅ¸ÀÔ ÆĞÅÏ»ç¿ë 
+	//ìœ ë‹›ë²„íŠ¼ í”„ë¡œí† íƒ€ì… íŒ¨í„´ì‚¬ìš© 
 	 
 	 
-	 marineim = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\Marin.png");
-	 firebatim = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\FireBat.png");
-	 ghostim = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\Ghost.png");
-	 medicim = new ImageIcon("C:\\Users\\KOJOUNGHYUN\\Desktop\\Game\\Medic.png");
+	 marineim = new ImageIcon("C:\\Game\\Marin.png");
+	 firebatim = new ImageIcon("C:\\Game\\FireBat.png");
+	 ghostim = new ImageIcon("C:\\Game\\Ghost.png");
+	 medicim = new ImageIcon("C:\\Game\\Medic.png");
 	 
 		Image marineim1= marineim.getImage(); 
 		Image firebatim1= firebatim.getImage(); 
@@ -175,19 +164,19 @@ public Frame() {
 	    
 
 	 
-	 //ºê¸´ÁöÆĞÅÏ
+	 //ë¸Œë¦¿ì§€íŒ¨í„´
 	 Bridge_Code code = new Bridge_Code(new Bridge_FUN());
 		  
-	 //   ( À¯´Ö  ÇÁ·ÎÅäÅ¸ÀÔ ÆĞÅÏ»ç¿ë);
+	 //   ( ìœ ë‹›  í”„ë¡œí† íƒ€ì… íŒ¨í„´ì‚¬ìš©);
 	 Unitbtn1.setLocation(10,150);
 	 Unitbtn1.setSize(100,30);
 	 Prototype_BarracksUnit marine = new Prototype_BarracksUnit();
-	 marine.setName("ÇØº´");
-	 marine.setWeapon("¼ÒÃÑ");
+	 marine.setName("í•´ë³‘");
+	 marine.setWeapon("ì†Œì´");
 	 Unitbtn1.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent Unit1) {
-	    	 System.out.println("À¯´ÖÁ¤º¸:" +marine.getName()+"\n");
-	    	 System.out.println("»ç¿ë¹«±â:" +marine.getWeapon()+"\n");
+	    	 System.out.println("ìœ ë‹›ì •ë³´:" +marine.getName()+"\n");
+	    	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +marine.getWeapon()+"\n");
 	    	 code.Stimpack();
 	    }
 	 });
@@ -195,25 +184,25 @@ public Frame() {
 	 Unitbtn2.setLocation(10,180);
 	 Unitbtn2.setSize(100,30);
 	 Prototype_BarracksUnit firebat = new Prototype_BarracksUnit();
-	 firebat.setName("È­¿°¹æ»çº´");
-	 firebat.setWeapon("È­¿°¹æ»ç±â");
+	 firebat.setName("í™”ì—¼ë°©ì‚¬ë³‘");
+	 firebat.setWeapon("í™”ì—¼ë°©ì‚¬ê¸°");
 
 	 Unitbtn2.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent Unit1) {
-		    	 System.out.println("À¯´ÖÁ¤º¸:" +firebat.getName()+"\n");
-		    	 System.out.println("»ç¿ë¹«±â:" +firebat.getWeapon()+"\n");
+		    	 System.out.println("ìœ ë‹›ì •ë³´:" +firebat.getName()+"\n");
+		    	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +firebat.getWeapon()+"\n");
 		    	code.Stimpack();
 		    }
 		 });
 	 Unitbtn3.setLocation(10, 210);
 	 Unitbtn3.setSize(100,30);
 	 Prototype_BarracksUnit ghost = new Prototype_BarracksUnit();
-	 ghost.setName("À¯·É");
-	 ghost.setWeapon("»êÅº ¼ÒÃÑ");
+	 ghost.setName("ìœ ë ¹");
+	 ghost.setWeapon("ì‚°íƒ„ ì†Œì´");
 	 Unitbtn3.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent Unit1) {
-		   	 System.out.println("À¯´ÖÁ¤º¸:" +ghost.getName()+"\n");
-	    	 System.out.println("»ç¿ë¹«±â:" +ghost.getWeapon()+"\n");
+		   	 System.out.println("ìœ ë‹›ì •ë³´:" +ghost.getName()+"\n");
+	    	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +ghost.getWeapon()+"\n");
 			    code.Ghost_LockDown();
 			    code.Nuclear_Strike();
 			    code.Cloaking();
@@ -223,12 +212,12 @@ public Frame() {
 	 Unitbtn4.setLocation(10, 240);
 	 Unitbtn4.setSize(100,30);
 	 Prototype_BarracksUnit medic = new Prototype_BarracksUnit();
-	 medic.setName("ÀÇ¹«°ü");
-	 medic.setWeapon("Ä¡·á±â");
+	 medic.setName("ì˜ë¬´ê´€");
+	 medic.setWeapon("ì¹˜ë£Œê¸°");
 	 Unitbtn4.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent Unit1) {
-		   	 System.out.println("À¯´ÖÁ¤º¸:" +medic.getName()+"\n");
-		 	 System.out.println("»ç¿ë¹«±â:" +medic.getWeapon()+"\n");
+		   	 System.out.println("ìœ ë‹›ì •ë³´:" +medic.getName()+"\n");
+		 	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +medic.getWeapon()+"\n");
 		    }
 		 });
 		 
@@ -239,13 +228,13 @@ public Frame() {
 	 
 	 
 
-	//Á¶ÀÛ ¹öÆ°
-	 Movebtn = new JButton("ÀÌµ¿");
-	 Attackbtn = new JButton("°ø°İ");
-	 Skillbtn = new JButton("½ºÅ³");
-	 Stopbtn = new JButton("Á¤Áö");
+	//ì¡°ì‘ ë²„íŠ¼
+	 Movebtn = new JButton("ì´ë™");
+	 Attackbtn = new JButton("ê³µê²©");
+	 Skillbtn = new JButton("ìŠ¤í‚¬");
+	 Stopbtn = new JButton("ì •ì§€");
 	
-	 //»óÅÂÆĞÅÏ ¹öÆ°
+	 //ìƒíƒœíŒ¨í„´ ë²„íŠ¼
 	 Movebtn.setLocation(130, 150);
 	 Movebtn.setSize(100,30);
 	 
@@ -262,7 +251,7 @@ public Frame() {
 	 add(Attackbtn);
 	 add(Skillbtn);
 	 add(Stopbtn);
-	    //»óÅÂ ÆĞÅÏ
+	    //ìƒíƒœ íŒ¨í„´
 	    UnitState control = new  UnitState();
 	    State_Attack attack = new State_Attack();
 	    State_Move Move = new State_Move();
@@ -274,7 +263,7 @@ public Frame() {
 	    
 	 
 	    
-	 // »óÅÂ ÆĞÅÏ »ç¿ë Á¶ÀÛÅ° 
+	 // ìƒíƒœ íŒ¨í„´ ì‚¬ìš© ì¡°ì‘í‚¤ 
 	
 	 Movebtn.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent Movebtn) {
@@ -312,21 +301,21 @@ public Frame() {
 		 });
 	
 	 
-	//¾÷±×·¹ÀÌµå ºÎºĞ  µ¥ÄÚ·¹ÀÌÅÍ ÆĞÅÏ
+	//ì—…ê·¸ë ˆì´ë“œ ë¶€ë¶„  ë°ì½”ë ˆì´í„° íŒ¨í„´
 	Decorator_Upgrade  Upgrade = new Decorator_Upgrade();
-	//¹æ¾î·Â Áõ°¡
+	//ë°©ì–´ë ¥ ì¦ê°€
 	Decorator_Armor ArmorUp = new Decorator_Armor(Upgrade);
-	//°ø°İ·Â Áõ°¡
+	//ê³µê²©ë ¥ ì¦ê°€
 	Decorator_Damage Damage = new Decorator_Damage(Upgrade);
-	//»ç°Å¸® Áõ°¡
+	//ì‚¬ê±°ë¦¬ ì¦ê°€
 	Decorator_Range RangeUp = new Decorator_Range(Upgrade);
 
     
 
 	    
-	 UpDamagebtn = new JButton("°ø°İ·Â");
-	 UpArmorbtn = new JButton("¹æ¾î·Â");
-	 UpRange = new JButton("»ç°Å¸®");
+	 UpDamagebtn = new JButton("ê³µê²©ë ¥");
+	 UpArmorbtn = new JButton("ë°©ì–´ë ¥");
+	 UpRange = new JButton("ì‚¬ê±°ë¦¬");
 	
 	
 	 UpDamagebtn.setLocation(250, 150);
@@ -390,12 +379,3 @@ public Frame() {
 			setVisible(true);
   }	
 }
-
-	
-	
-
-
-	
-
-
-    
