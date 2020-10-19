@@ -2,10 +2,10 @@ package Sw_project;
 
 public class State_Attack implements State_control {
 
-	//°ø°İ »óÅÂ
+	//ê³µê²© ìƒíƒœ
 	public void Unit_control() {
-    System.out.println("°ø°İ");
+    System.out.println("ê³µê²©");
 
-	}
-     
+	}    
 }
+
