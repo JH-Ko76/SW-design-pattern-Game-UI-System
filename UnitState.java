@@ -1,13 +1,10 @@
 package Sw_project;
 
+//요청 클래스
 public class UnitState {
     private State_control st_control;
     
-    public  UnitState() {
-    	this.st_control = new State_stop();
-    }
-    
- 
+    //액션 생성
     public void setState_control(State_control st_control) {
     	this.st_control = st_control;
     	

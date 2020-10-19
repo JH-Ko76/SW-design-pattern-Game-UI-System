@@ -1,6 +1,6 @@
 package Sw_project;
 
-
+//스킬 클래스 정의
 public class Bridge_Function {
       private Bridge_Btn Btn;
       

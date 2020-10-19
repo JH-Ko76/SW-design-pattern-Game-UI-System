@@ -2,11 +2,11 @@ package Sw_project;
 
 public  class Bridge_FUN implements Bridge_Btn {
 
+	//메서드를 이용해 버튼 클릭시 나올 스킬 정보를 정의
 	@Override
 	public void Stimpack() {
 		System.out.println("스팀팩");
 		System.out.println("사용시 유닛의 공격속도, 이동속도가 빨라집니다.");
-
 	}
 
 

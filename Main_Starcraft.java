@@ -24,7 +24,7 @@ public class Main_Starcraft  {
 	
 	public static void main(String[] args) throws CloneNotSupportedException {
 		Frame f = new Frame();	
-		//í”„ë ˆì„ ìƒì„±
+		//ÇÁ·¹ÀÓ »ı¼º
      	}
 	}
 
@@ -43,11 +43,11 @@ class Frame extends JFrame {
 	
 
 public Frame() {
-	setTitle("ìœ ë‹›ì¸í„°í˜ì´ìŠ¤ í”„ë¡œê·¸ë¨");
+	setTitle("À¯´ÖÀÎÅÍÆäÀÌ½º ÇÁ·Î±×·¥");
 	setLayout(null);
 	
 
-	//ë°°ëŸ­ ì´ë¯¸ì§€
+	//·¹ÀÌ¾Æ¿ô ¹èÄ¡ Á¤¸®
 	Barracks = new ImageIcon("C:\\Game\\Barrack.png");
 	panel = new JPanel();
 	panel.setLocation(10, 10);
@@ -103,19 +103,19 @@ public Frame() {
 	vect.add(vec);
 	
 
-    //ì•ˆë‚´
+    //¾È³»
 
 
-	label5 = new JLabel("ìœ ë‹› ì •ë³´");
+	label5 = new JLabel("À¯´Ö Á¤º¸");
 	label5.setSize(100,30);
 	panel1.add(label5);
 	
-	label2 = new JLabel("ì¡°ì‘ ë²„íŠ¼");
+	label2 = new JLabel("Á¶ÀÛ ¹öÆ°");
 	label2.setSize(100,30);
 	panel2.add(label2);
 	
 	
-	label3 = new JLabel("ì—…ê·¸ë ˆì´ë“œ");
+	label3 = new JLabel("¾÷±×·¹ÀÌµå");
 	label3.setSize(100,30);
 	panel3.add(label3);
 		
@@ -123,7 +123,7 @@ public Frame() {
 	
 	
 	
-	//ìœ ë‹›ë²„íŠ¼ í”„ë¡œí† íƒ€ì… íŒ¨í„´ì‚¬ìš© 
+	//À¯´ÖÁ¶ÀÛ/»ı»ê¹öÆ° ÇÁ·ÎÅäÅ¸ÀÔ ÆĞÅÏ»ç¿ë 
 	 
 	 
 	 marineim = new ImageIcon("C:\\Game\\Marin.png");
@@ -131,22 +131,22 @@ public Frame() {
 	 ghostim = new ImageIcon("C:\\Game\\Ghost.png");
 	 medicim = new ImageIcon("C:\\Game\\Medic.png");
 	 
-		Image marineim1= marineim.getImage(); 
-		Image firebatim1= firebatim.getImage(); 
-		Image ghostim1= ghostim.getImage(); 
-		Image medicim1= medicim.getImage(); 
+	   Image marineim1= marineim.getImage(); 
+	   Image firebatim1= firebatim.getImage(); 
+	   Image ghostim1= ghostim.getImage(); 
+	   Image medicim1= medicim.getImage(); 
 	
 		
 
-		Image Redimage = marineim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
-		Image Blueimage = firebatim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
-		Image Whiteimage = ghostim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
-		Image Powerimage = medicim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
+	   Image Redimage = marineim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
+	   Image Blueimage = firebatim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
+	   Image Whiteimage = ghostim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
+	   Image Powerimage = medicim1.getScaledInstance(40,40,Image.SCALE_DEFAULT);
 	
-		ImageIcon redicon = new ImageIcon(Redimage);
-		ImageIcon blueicon = new ImageIcon(Blueimage);
-		ImageIcon whiteicon= new ImageIcon(Whiteimage);
-		ImageIcon powericon= new ImageIcon(Powerimage);
+	   ImageIcon redicon = new ImageIcon(Redimage);
+	   ImageIcon blueicon = new ImageIcon(Blueimage);
+	   ImageIcon whiteicon= new ImageIcon(Whiteimage);
+	   ImageIcon powericon= new ImageIcon(Powerimage);
 
 	   Unitbtn1 = new JButton(redicon);
 	   Unitbtn2 = new JButton(blueicon);
@@ -164,60 +164,63 @@ public Frame() {
 	    
 
 	 
-	 //ë¸Œë¦¿ì§€íŒ¨í„´
+	 //ºê¸´ÁöÆĞÅÏ (°´Ã¼ »ı¼º)
 	 Bridge_Code code = new Bridge_Code(new Bridge_FUN());
 		  
-	 //   ( ìœ ë‹›  í”„ë¡œí† íƒ€ì… íŒ¨í„´ì‚¬ìš©);
+	 //À¯´Ö  ÇÁ·ÎÅäÅ¸ÀÔ ÆĞÅÏ»ç¿ë;
 	 Unitbtn1.setLocation(10,150);
 	 Unitbtn1.setSize(100,30);
+     // ¸¶¸° °´Ã¼ °¡Á®¿À±â	 
 	 Prototype_BarracksUnit marine = new Prototype_BarracksUnit();
-	 marine.setName("í•´ë³‘");
-	 marine.setWeapon("ì†Œì´");
+	 //name , weapon ÀÎ½ºÅÏ½º »ç¿ë
+	 marine.setName("ÇØº´");
+	 marine.setWeapon("¼ÒÃÑ");
 	 Unitbtn1.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent Unit1) {
-	    	 System.out.println("ìœ ë‹›ì •ë³´:" +marine.getName()+"\n");
-	    	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +marine.getWeapon()+"\n");
+	    	 System.out.println("À¯´ÖÁ¤º¸:" +marine.getName()+"\n");
+	    	 System.out.println("»ç¿ë¹«±â:" +marine.getWeapon()+"\n");
 	    	 code.Stimpack();
 	    }
 	 });
-
+     // ÆÄÀÌ¾î¹î °´Ã¼ °¡Á®¿À±â	 
 	 Unitbtn2.setLocation(10,180);
 	 Unitbtn2.setSize(100,30);
 	 Prototype_BarracksUnit firebat = new Prototype_BarracksUnit();
-	 firebat.setName("í™”ì—¼ë°©ì‚¬ë³‘");
-	 firebat.setWeapon("í™”ì—¼ë°©ì‚¬ê¸°");
-
+	 firebat.setName("È­¿°¹æ»çº´");
+	 firebat.setWeapon("È­¿°¹æ»ç±â");
 	 Unitbtn2.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent Unit1) {
-		    	 System.out.println("ìœ ë‹›ì •ë³´:" +firebat.getName()+"\n");
-		    	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +firebat.getWeapon()+"\n");
+		    	 System.out.println("À¯´ÖÁ¤º¸:" +firebat.getName()+"\n");
+		    	 System.out.println("»ç¿ë¹«±â:" +firebat.getWeapon()+"\n");
 		    	code.Stimpack();
 		    }
 		 });
+	 // °í½ºÆ® °´Ã¼ °¡Á®¿À±â
 	 Unitbtn3.setLocation(10, 210);
 	 Unitbtn3.setSize(100,30);
 	 Prototype_BarracksUnit ghost = new Prototype_BarracksUnit();
-	 ghost.setName("ìœ ë ¹");
-	 ghost.setWeapon("ì‚°íƒ„ ì†Œì´");
+	 ghost.setName("À¯·É");
+	 ghost.setWeapon("»êÅº ¼ÒÃÑ");
 	 Unitbtn3.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent Unit1) {
-		   	 System.out.println("ìœ ë‹›ì •ë³´:" +ghost.getName()+"\n");
-	    	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +ghost.getWeapon()+"\n");
+		   	 System.out.println("À¯´ÖÁ¤º¸:" +ghost.getName()+"\n");
+	    	 System.out.println("»ç¿ë¹«±â:" +ghost.getWeapon()+"\n");
 			    code.Ghost_LockDown();
 			    code.Nuclear_Strike();
 			    code.Cloaking();
 
 		    }
 		 });
+	 // ¸Şµñ °´Ã¼ °¡Á®¿À±â
 	 Unitbtn4.setLocation(10, 240);
 	 Unitbtn4.setSize(100,30);
 	 Prototype_BarracksUnit medic = new Prototype_BarracksUnit();
-	 medic.setName("ì˜ë¬´ê´€");
-	 medic.setWeapon("ì¹˜ë£Œê¸°");
+	 medic.setName("ÀÇ¹«°ü");
+	 medic.setWeapon("Ä¡·á±â");
 	 Unitbtn4.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent Unit1) {
-		   	 System.out.println("ìœ ë‹›ì •ë³´:" +medic.getName()+"\n");
-		 	 System.out.println("ì‚¬ìš©ë¬´ê¸°:" +medic.getWeapon()+"\n");
+		   	 System.out.println("À¯´ÖÁ¤º¸:" +medic.getName()+"\n");
+		 	 System.out.println("»ç¿ë¹«±â:" +medic.getWeapon()+"\n");
 		    }
 		 });
 		 
@@ -228,13 +231,13 @@ public Frame() {
 	 
 	 
 
-	//ì¡°ì‘ ë²„íŠ¼
-	 Movebtn = new JButton("ì´ë™");
-	 Attackbtn = new JButton("ê³µê²©");
-	 Skillbtn = new JButton("ìŠ¤í‚¬");
-	 Stopbtn = new JButton("ì •ì§€");
+	//Á¶ÀÛ ¹öÆ°
+	 Movebtn = new JButton("ÀÌµ¿");
+	 Attackbtn = new JButton("°ø°İ");
+	 Skillbtn = new JButton("½ºÅ³");
+	 Stopbtn = new JButton("Á¤Áö");
 	
-	 //ìƒíƒœíŒ¨í„´ ë²„íŠ¼
+	 //»óÅÂÆĞÅÏ ¹öÆ°
 	 Movebtn.setLocation(130, 150);
 	 Movebtn.setSize(100,30);
 	 
@@ -251,7 +254,7 @@ public Frame() {
 	 add(Attackbtn);
 	 add(Skillbtn);
 	 add(Stopbtn);
-	    //ìƒíƒœ íŒ¨í„´
+	    //»óÅÂ ÆĞÅÏ °´Ã¼ °¡Á®¿À±â 
 	    UnitState control = new  UnitState();
 	    State_Attack attack = new State_Attack();
 	    State_Move Move = new State_Move();
@@ -263,11 +266,10 @@ public Frame() {
 	    
 	 
 	    
-	 // ìƒíƒœ íŒ¨í„´ ì‚¬ìš© ì¡°ì‘í‚¤ 
-	
+	 // »óÅÂ ÆĞÅÏ »ç
 	 Movebtn.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent Movebtn) {
-	    	
+	    	// ÄÁÆ®·Ñ ¸Ş¼Òµå È£Ãâ 
 	  	    control.setState_control(Move);
 	  	  control.KeyPush();
 	    }
@@ -301,21 +303,21 @@ public Frame() {
 		 });
 	
 	 
-	//ì—…ê·¸ë ˆì´ë“œ ë¶€ë¶„  ë°ì½”ë ˆì´í„° íŒ¨í„´
+	//¾÷±×·¹ÀÌµå ºÎºĞ  µ¥ÄÚ·¹ÀÌÅÍ ÆĞÅÏ °´Ã¼ °¡Á®¿À±â
 	Decorator_Upgrade  Upgrade = new Decorator_Upgrade();
-	//ë°©ì–´ë ¥ ì¦ê°€
+	//¹æ¾î·Â Áõ°¡
 	Decorator_Armor ArmorUp = new Decorator_Armor(Upgrade);
-	//ê³µê²©ë ¥ ì¦ê°€
+	//°ø°İ·Â Áõ°¡
 	Decorator_Damage Damage = new Decorator_Damage(Upgrade);
-	//ì‚¬ê±°ë¦¬ ì¦ê°€
+	//»ç°Å¸® Áõ°¡
 	Decorator_Range RangeUp = new Decorator_Range(Upgrade);
 
     
 
 	    
-	 UpDamagebtn = new JButton("ê³µê²©ë ¥");
-	 UpArmorbtn = new JButton("ë°©ì–´ë ¥");
-	 UpRange = new JButton("ì‚¬ê±°ë¦¬");
+	 UpDamagebtn = new JButton("°ø°İ·Â");
+	 UpArmorbtn = new JButton("¹æ¾î·Â");
+	 UpRange = new JButton("»ç°Å¸®");
 	
 	
 	 UpDamagebtn.setLocation(250, 150);
@@ -337,7 +339,7 @@ public Frame() {
 		    	 int countmax= 1;
 		    	if (countmax < 3) {
 		    		countmax++;
-			  
+			        //¸Ş¼Òµå È£Ãâ 
 		    		System.out.println(Damage.getUpgrade());
 		    	}else if (countmax > 3) {
 		    	    control.KeyPush();
@@ -379,3 +381,12 @@ public Frame() {
 			setVisible(true);
   }	
 }
+
+	
+	
+
+
+	
+
+
+    
