@@ -2,10 +2,8 @@ package Sw_project;
 
 public class State_Move implements State_control {
 
-	//ÀÌµ¿»óÅÂ
+	//ì´ë™ìƒíƒœ
 	public void Unit_control() {
-	    System.out.println( "ÀÌµ¿");	    
+	    System.out.println( "ì´ë™");	    
 	}
-
 }
-
