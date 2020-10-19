@@ -1,6 +1,6 @@
 package Sw_project;
 
-//Ãß»ó ¸Ş¼­µå »ı¼º
+//ì¶”ìƒ ë©”ì„œë“œ ìƒì„±
 public interface State_control {
 	void Unit_control();
 }
