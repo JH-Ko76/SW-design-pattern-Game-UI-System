@@ -1,6 +1,6 @@
 package Sw_project;
 
-//½ºÅ³ Å¬·¡½º Á¤ÀÇ
+//ìŠ¤í‚¬ í´ë˜ìŠ¤ ì •ì˜
 public class Bridge_Function {
       private Bridge_Btn Btn;
       
@@ -24,7 +24,5 @@ public class Bridge_Function {
       public void Cloaking() {
     	  Btn.Cloaking();
       }
-      
-
    }
 
