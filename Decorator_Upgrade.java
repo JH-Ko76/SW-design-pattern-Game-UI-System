@@ -2,6 +2,6 @@ package Sw_project;
 
 public class Decorator_Upgrade {
 	public String getUpgrade() {
-		return "¾÷±×·¹ÀÌµå";
+		return "ì—…ê·¸ë ˆì´ë“œ";
 	}
 }
