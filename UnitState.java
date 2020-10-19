@@ -1,17 +1,15 @@
 package Sw_project;
 
-//¿äÃ» Å¬·¡½º
+//ìš”ì²­ í´ë˜ìŠ¤
 public class UnitState {
     private State_control st_control;
     
-    //¾×¼Ç »ı¼º
+    //ì•¡ì…˜ ìƒì„±
     public void setState_control(State_control st_control) {
     	this.st_control = st_control;
     	
     }
-    
     public void KeyPush() {
     	st_control.Unit_control();
     }
-     
 }
