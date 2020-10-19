@@ -1,6 +1,6 @@
 package Sw_project;
 
-//¸Ş¼­µå »ı¼º 
+//ë©”ì„œë“œ ìƒì„± 
 public interface Bridge_Btn {
 	public void Stimpack();
 	public void Ghost_LockDown();
