@@ -16,3 +16,7 @@ Java Swing을 통해 구현하였습니다.
 총 4가지 패턴을 사용하였습니다.
 ![ddd](https://user-images.githubusercontent.com/72744580/96365829-4f5d5400-117e-11eb-8238-d0eede689d75.PNG)
 
+![image](https://github.com/JH-Ko76/SW-design-pattern-Game-UI-System/assets/72744580/3b1630c8-ee9d-4bb5-828a-57c3ccc43f9b)
+
+![image](https://github.com/JH-Ko76/SW-design-pattern-Game-UI-System/assets/72744580/685f4ec1-4b62-4b99-9633-3d8c9a968e7c)
+
